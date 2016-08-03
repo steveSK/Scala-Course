@@ -1,9 +1,0 @@
-[0m[[0minfo[0m] [0m[32mFunSetSuite:[0m[0m
-[0m[[0minfo[0m] [0m[32m- contains is implemented[0m[0m
-[0m[[0minfo[0m] [0m[32m- singletonSet(1) contains 1[0m[0m
-[0m[[0minfo[0m] [0m[32m- union contains all elements of each set[0m[0m
-[0m[[0minfo[0m] [0m[32m- intersect contains just element 2[0m[0m
-[0m[[0minfo[0m] [0m[32m- dif contains just element 2[0m[0m
-[0m[[0minfo[0m] [0m[32m- filter contains element 2,3[0m[0m
-[0m[[0minfo[0m] [0m[32m- for all satisfy condition[0m[0m
-[0m[[0minfo[0m] [0m[32m- exists satisfy condition[0m[0m
