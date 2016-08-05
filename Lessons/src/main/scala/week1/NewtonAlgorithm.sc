@@ -1,4 +1,8 @@
 import java.lang.Math
+// example of imports 
+import week3.Hello
+import week3.{Hello}
+import week3._  // instead of Java *
 
 def abs(x: Double) : Double =
   if(x < 0) -x else x
