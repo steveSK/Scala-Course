@@ -27,6 +27,7 @@ def nth[T](n: Int, list: List[T]): T =
     else return nth(n-1, list.tail)
 
 
+
 val list = new Cons(3,new Cons(2, new Cons(1,new Nil)))
 
 val variable = nth(0,list)

@@ -70,7 +70,7 @@ abstract class TweetSet {
   def mostRetweeted: Tweet = {
     var most: Tweet = null
     this.foreach(x => if (most == null || most.retweets < x.retweets) most = x)
-    return most;
+    most
   }
 
   /**
@@ -142,7 +142,7 @@ class NonEmpty(elem: Tweet, left: TweetSet, right: TweetSet) extends TweetSet {
     else leftright
   }
 
-  def union(that: TweetSet): TweetSet = ((left union right) union that).incl(elem)
+  def union(that: TweetSet): TweetSet = left union (right union that).incl(elem)
 
   def descendingByRetweet: TweetList = {
     new Cons(mostRetweeted, this.remove(this.mostRetweeted).descendingByRetweet)
